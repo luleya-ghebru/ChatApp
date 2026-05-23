@@ -23,7 +23,7 @@ public class MainApp {
             username = input.nextLine();
             usernameMessage = login.validateUsername(username);
             System.out.println(usernameMessage);
-        }
+        } // this is a new change that we just did 
         
         // Password loop
         String password = "";
