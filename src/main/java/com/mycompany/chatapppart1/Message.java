@@ -11,7 +11,7 @@ public class Message {
     private String recipient;
     private String message;
     private String messageHash;
-    private static int totalMessagesSent = 0;
+    private static int totalMessagesSent = 0;    // Tracks total sent messages across all instances
     private static List<Message> sentMessages = new ArrayList<>();
 
     public Message(int messageNumber, String recipient, String message) {
