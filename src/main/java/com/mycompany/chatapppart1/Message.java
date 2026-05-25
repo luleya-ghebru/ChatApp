@@ -11,8 +11,8 @@ public class Message {
     private String recipient;
     private String message;
     private String messageHash;
-    private static int totalMessagesSent = 0;    // Tracks total sent messages across all instances
-    private static List<Message> sentMessages = new ArrayList<>();
+    private static int totalMessagesSent = 0;              // Tracks total sent messages across all instances
+    private static List<Message> sentMessages = new ArrayList<>();  // Stores all sent messages
 
     public Message(int messageNumber, String recipient, String message) {
         this.messageNumber = messageNumber;
@@ -22,6 +22,7 @@ public class Message {
         this.messageHash = createMessageHash();
     }
 
+    // Generates a random 10-digit numeric message ID
     private String generateMessageID() {
         Random rand = new Random();
         StringBuilder id = new StringBuilder();
@@ -31,6 +32,7 @@ public class Message {
         return id.toString();
     }
 
+    // Format: XX:N:FIRSTWORDLASTWORD (uppercased)
     public String createMessageHash() {
         String[] words = message.trim().split("\\s+");
         String firstWord = words[0].replaceAll("[^a-zA-Z0-9]", "");
@@ -39,10 +41,12 @@ public class Message {
         return (firstTwo + ":" + messageNumber + ":" + firstWord + lastWord).toUpperCase();
     }
 
+    // ID is valid if it does not exceed 10 characters
     public boolean checkMessageID() {
         return messageID.length() <= 10;
     }
 
+    // Recipient must start with '+' and be 12 characters or fewer
     public String checkRecipientCell() {
         if (recipient.startsWith("+") && recipient.length() <= 12) {
             return "Cell phone number successfully captured.";
@@ -50,6 +54,7 @@ public class Message {
         return "Cell phone number is incorrectly formatted or does not contain an international code. Please correct the number and try again.";
     }
 
+    // Message must not exceed 250 characters
     public String validateMessage() {
         if (message.length() <= 250) {
             return "Message ready to send.";
@@ -57,6 +62,7 @@ public class Message {
         return "Please enter a message of less than 250 characters.";
     }
 
+    // 1 = Send, 2 = Delete prompt, 3 = Store to file
     public String sentMessage(int choice) {
         switch (choice) {
             case 1:
@@ -73,6 +79,7 @@ public class Message {
         }
     }
 
+    // Returns a formatted summary of all sent messages
     public static String printMessages() {
         if (sentMessages.isEmpty()) {
             return "No messages sent yet.";
@@ -92,6 +99,7 @@ public class Message {
         return totalMessagesSent;
     }
 
+    // Appends message to messages.json in basic JSON object format
     public void storeMessage() {
         try (FileWriter writer = new FileWriter("messages.json", true)) {
             writer.write("{\n");
@@ -106,6 +114,7 @@ public class Message {
         }
     }
 
+    // Getters
     public String getMessageID()     { return messageID; }
     public String getRecipient()     { return recipient; }
     public String getMessage()       { return message; }
