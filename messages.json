@@ -5,3 +5,17 @@
   "message": "HELLO HOW ARE YOU ?",
   "messageHash": "22:1:HELLO"
 }
+{
+  "messageID": "6319337855",
+  "messageNumber": 1,
+  "recipient": "+27989753215",
+  "message": "dude",
+  "messageHash": "63:1:DUDEDUDE"
+}
+{
+  "messageID": "2445202176",
+  "messageNumber": 1,
+  "recipient": "+27843855975",
+  "message": "hello this is luleya!",
+  "messageHash": "24:1:HELLOLULEYA"
+}

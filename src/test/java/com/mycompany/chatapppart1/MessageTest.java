@@ -3,21 +3,20 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.mycompany.chatapppart1;
- 
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-
 /**
  *
  * @author Student
  */
 public class MessageTest {
- 
 
     private Message message1;
     private Message message2;
 
+    // Set up two test messages before each test runs
     @BeforeEach
     public void setUp() {
         message1 = new Message(1, "+27718693002", "Hi Mike, can you join us for dinner tonight?");
@@ -33,6 +32,7 @@ public class MessageTest {
     // Test 2 - Message length failure
     @Test
     public void testMessageLengthFailure() {
+        // 260 characters exceeds the 250 limit
         Message longMsg = new Message(1, "+27718693002", "A".repeat(260));
         assertEquals("Please enter a message of less than 250 characters.", longMsg.validateMessage());
     }
@@ -43,7 +43,7 @@ public class MessageTest {
         assertEquals("Cell phone number successfully captured.", message1.checkRecipientCell());
     }
 
-    // Test 4 - Recipient failure
+    // Test 4 - Recipient failure - number missing the '+' international code
     @Test
     public void testRecipientFailure() {
         Message badRecipient = new Message(1, "08575975889", "Hi Mike, can you join us for dinner tonight?");
@@ -63,6 +63,7 @@ public class MessageTest {
     @Test
     public void testMessageHashContent() {
         String hash = message1.getMessageHash();
+        // Expected: hash ends with first word "HI" + last word "TONIGHT"
         assertTrue(hash.endsWith("HITONIGHT"),
             "Expected hash to end with HITONIGHT but was: " + hash);
     }
@@ -74,6 +75,7 @@ public class MessageTest {
             new Message(1, "+27718693002", "Hi Mike, can you join us for dinner tonight?"),
             new Message(2, "+27575975889", "Hi Keegan, did you receive the payment?")
         };
+        // Check that every hash is valid, non-empty, uppercase, and contains colons
         for (Message m : messages) {
             String hash = m.getMessageHash();
             assertNotNull(hash);
@@ -90,5 +92,5 @@ public class MessageTest {
         System.out.println("Message ID generated: " + message1.getMessageID());
     }
 
-    // Test 9 - Message ID is not long   
+    // Test 9 - Message ID is not long
 }
