@@ -72,6 +72,8 @@ public class Message {
             case 2:
                 return "Press 0 to delete the message.";
             case 3:
+                sentMessages.add(this);  // Add to list so it shows in menu option 2
+                totalMessagesSent++;
                 storeMessage();
                 return "Message successfully stored.";
             default:

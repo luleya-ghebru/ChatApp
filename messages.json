@@ -19,3 +19,38 @@
   "message": "hello this is luleya!",
   "messageHash": "24:1:HELLOLULEYA"
 }
+{
+  "messageID": "5881932854",
+  "messageNumber": 1,
+  "recipient": "+27843855975",
+  "message": "hello my name is luleya ",
+  "messageHash": "58:1:HELLOLULEYA"
+}
+{
+  "messageID": "0594048401",
+  "messageNumber": 1,
+  "recipient": "+27876543298",
+  "message": "MY NAME IS LULEYA ",
+  "messageHash": "05:1:MYLULEYA"
+}
+{
+  "messageID": "5721007122",
+  "messageNumber": 1,
+  "recipient": "+27987654321",
+  "message": "hey amadu ",
+  "messageHash": "57:1:HEYAMADU"
+}
+{
+  "messageID": "9767256132",
+  "messageNumber": 2,
+  "recipient": "+27987654321",
+  "message": "hello mamzo ",
+  "messageHash": "97:2:HELLOMAMZO"
+}
+{
+  "messageID": "6343145721",
+  "messageNumber": 1,
+  "recipient": "+27987654321",
+  "message": "I am a girl ",
+  "messageHash": "63:1:IGIRL"
+}
