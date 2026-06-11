@@ -54,3 +54,227 @@
   "message": "I am a girl ",
   "messageHash": "63:1:IGIRL"
 }
+{
+  "messageID": "4233074530",
+  "messageNumber": 1,
+  "recipient": "+27987654321",
+  "message": "got you",
+  "messageHash": "42:1:GOTYOU"
+}
+{
+  "messageID": "1857490530",
+  "messageNumber": 2,
+  "recipient": "+27987654321",
+  "message": "i am a girl ",
+  "messageHash": "18:2:IGIRL"
+}
+{
+  "messageNumber": 2,
+  "recipient": "+27838884567",
+  "messageID": "3753112777",
+  "messageHash": "37:2:WHERETIME",
+  "message": "Where are you? You are late! I have asked you to be on time."
+}
+{
+  "messageNumber": 5,
+  "recipient": "+27838884567",
+  "messageID": "6944641656",
+  "messageHash": "69:5:OKYOU",
+  "message": "Ok, I am leaving without you."
+}
+{
+  "messageNumber": 2,
+  "recipient": "+27838884567",
+  "messageID": "4549473938",
+  "messageHash": "45:2:WHERETIME",
+  "message": "Where are you? You are late! I have asked you to be on time."
+}
+{
+  "messageNumber": 5,
+  "recipient": "+27838884567",
+  "messageID": "1232842986",
+  "messageHash": "12:5:OKYOU",
+  "message": "Ok, I am leaving without you."
+}
+{
+  "messageNumber": 2,
+  "recipient": "+27838884567",
+  "messageID": "5631861118",
+  "messageHash": "56:2:WHERETIME",
+  "message": "Where are you? You are late! I have asked you to be on time."
+}
+{
+  "messageNumber": 1,
+  "recipient": "+27789456123",
+  "messageID": "1672610065",
+  "messageHash": "16:1:GOSHOP",
+  "message": "Go to the shop "
+}
+{
+  "messageNumber": 2,
+  "recipient": "+27789456123",
+  "messageID": "5591888471",
+  "messageHash": "55:2:INOW",
+  "message": "i am in my house right now "
+}
+{
+  "messageNumber": 2,
+  "recipient": "+27838884567",
+  "messageID": "6164417009",
+  "messageHash": "61:2:WHERETIME",
+  "message": "Where are you? You are late! I have asked you to be on time."
+}
+{
+  "messageNumber": 5,
+  "recipient": "+27838884567",
+  "messageID": "2291322828",
+  "messageHash": "22:5:OKYOU",
+  "message": "Ok, I am leaving without you."
+}
+{
+  "messageNumber": 2,
+  "recipient": "+27838884567",
+  "messageID": "6438927936",
+  "messageHash": "64:2:WHERETIME",
+  "message": "Where are you? You are late! I have asked you to be on time."
+}
+{
+  "messageNumber": 5,
+  "recipient": "+27838884567",
+  "messageID": "5467406230",
+  "messageHash": "54:5:OKYOU",
+  "message": "Ok, I am leaving without you."
+}
+{
+  "messageNumber": 2,
+  "recipient": "+27838884567",
+  "messageID": "1475063894",
+  "messageHash": "14:2:WHERETIME",
+  "message": "Where are you? You are late! I have asked you to be on time."
+}
+{
+  "messageNumber": 1,
+  "recipient": "+27098765432",
+  "messageID": "2740055660",
+  "messageHash": "27:1:MYLULEYA",
+  "message": "my name is luleya "
+}
+{
+  "messageNumber": 2,
+  "recipient": "+27098765432",
+  "messageID": "5680084459",
+  "messageHash": "56:2:IFLY",
+  "message": "i want to fly "
+}
+{
+  "messageNumber": 2,
+  "recipient": "+27838884567",
+  "messageID": "4304142924",
+  "messageHash": "43:2:WHERETIME",
+  "message": "Where are you? You are late! I have asked you to be on time."
+}
+{
+  "messageNumber": 5,
+  "recipient": "+27838884567",
+  "messageID": "6120840554",
+  "messageHash": "61:5:OKYOU",
+  "message": "Ok, I am leaving without you."
+}
+{
+  "messageNumber": 2,
+  "recipient": "+27838884567",
+  "messageID": "3196164370",
+  "messageHash": "31:2:WHERETIME",
+  "message": "Where are you? You are late! I have asked you to be on time."
+}
+{
+  "messageNumber": 5,
+  "recipient": "+27838884567",
+  "messageID": "7177332132",
+  "messageHash": "71:5:OKYOU",
+  "message": "Ok, I am leaving without you."
+}
+{
+  "messageNumber": 2,
+  "recipient": "+27838884567",
+  "messageID": "7576853268",
+  "messageHash": "75:2:WHERETIME",
+  "message": "Where are you? You are late! I have asked you to be on time."
+}
+{
+  "messageNumber": 2,
+  "recipient": "+27838884567",
+  "messageID": "1411106076",
+  "messageHash": "14:2:WHERETIME",
+  "message": "Where are you? You are late! I have asked you to be on time."
+}
+{
+  "messageNumber": 5,
+  "recipient": "+27838884567",
+  "messageID": "5920330630",
+  "messageHash": "59:5:OKYOU",
+  "message": "Ok, I am leaving without you."
+}
+{
+  "messageNumber": 2,
+  "recipient": "+27838884567",
+  "messageID": "1416460684",
+  "messageHash": "14:2:WHERETIME",
+  "message": "Where are you? You are late! I have asked you to be on time."
+}
+{
+  "messageNumber": 5,
+  "recipient": "+27838884567",
+  "messageID": "6674312871",
+  "messageHash": "66:5:OKYOU",
+  "message": "Ok, I am leaving without you."
+}
+{
+  "messageNumber": 2,
+  "recipient": "+27838884567",
+  "messageID": "7369729960",
+  "messageHash": "73:2:WHERETIME",
+  "message": "Where are you? You are late! I have asked you to be on time."
+}
+{
+  "messageNumber": 2,
+  "recipient": "+27838884567",
+  "messageID": "6959138326",
+  "messageHash": "69:2:WHERETIME",
+  "message": "Where are you? You are late! I have asked you to be on time."
+}
+{
+  "messageNumber": 5,
+  "recipient": "+27838884567",
+  "messageID": "0117938741",
+  "messageHash": "01:5:OKYOU",
+  "message": "Ok, I am leaving without you."
+}
+{
+  "messageNumber": 2,
+  "recipient": "+27838884567",
+  "messageID": "1477365648",
+  "messageHash": "14:2:WHERETIME",
+  "message": "Where are you? You are late! I have asked you to be on time."
+}
+{
+  "messageNumber": 5,
+  "recipient": "+27838884567",
+  "messageID": "2644915366",
+  "messageHash": "26:5:OKYOU",
+  "message": "Ok, I am leaving without you."
+}
+{
+  "messageNumber": 2,
+  "recipient": "+27838884567",
+  "messageID": "1028423705",
+  "messageHash": "10:2:WHERETIME",
+  "message": "Where are you? You are late! I have asked you to be on time."
+}
+{
+  "messageNumber": 1,
+  "recipient": "+27789456123",
+  "messageID": "2240892884",
+  "messageHash": "22:1:MYLULEYA",
+  "message": "my name is luleya "
+}
