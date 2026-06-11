@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.mycompany.chatapppart1.LoginTests" time="0.073" tests="14" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.mycompany.chatapppart1.LoginTests" time="0.06" tests="14" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="26"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\ghebr\OneDrive\Documents\GitHub\ChatApp\target\test-classes;C:\Users\ghebr\OneDrive\Documents\GitHub\ChatApp\target\classes;C:\Users\ghebr\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;C:\Users\ghebr\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;C:\Users\ghebr\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\ghebr\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.3\junit-jupiter-params-5.10.3.jar;C:\Users\ghebr\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3\junit-jupiter-engine-5.10.3.jar;C:\Users\ghebr\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;C:\Users\ghebr\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;"/>
+    <property name="java.class.path" value="C:\Users\ghebr\OneDrive\Documents\GitHub\ChatApp\target\test-classes;C:\Users\ghebr\OneDrive\Documents\GitHub\ChatApp\target\classes;C:\Users\ghebr\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;C:\Users\ghebr\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;C:\Users\ghebr\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\ghebr\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.3\junit-jupiter-params-5.10.3.jar;C:\Users\ghebr\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3\junit-jupiter-engine-5.10.3.jar;C:\Users\ghebr\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;C:\Users\ghebr\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\ghebr\.m2\repository\org\json\json\20240303\json-20240303.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,9 +15,9 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-26\bin"/>
-    <property name="sun.java.command" value="C:\Users\ghebr\AppData\Local\Temp\surefire13120852395782144410\surefirebooter-20260525210310228_3.jar C:\Users\ghebr\AppData\Local\Temp\surefire13120852395782144410 2026-05-25T21-03-10_110-jvmRun1 surefire-20260525210310228_1tmp surefire_0-20260525210310228_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\ghebr\AppData\Local\Temp\surefire4093209946444377370\surefirebooter-20260611190027872_3.jar C:\Users\ghebr\AppData\Local\Temp\surefire4093209946444377370 2026-06-11T19-00-27_756-jvmRun1 surefire-20260611190027872_1tmp surefire_0-20260611190027872_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\ghebr\OneDrive\Documents\GitHub\ChatApp\target\test-classes;C:\Users\ghebr\OneDrive\Documents\GitHub\ChatApp\target\classes;C:\Users\ghebr\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;C:\Users\ghebr\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;C:\Users\ghebr\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\ghebr\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.3\junit-jupiter-params-5.10.3.jar;C:\Users\ghebr\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3\junit-jupiter-engine-5.10.3.jar;C:\Users\ghebr\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;C:\Users\ghebr\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\ghebr\OneDrive\Documents\GitHub\ChatApp\target\test-classes;C:\Users\ghebr\OneDrive\Documents\GitHub\ChatApp\target\classes;C:\Users\ghebr\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;C:\Users\ghebr\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;C:\Users\ghebr\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\ghebr\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.3\junit-jupiter-params-5.10.3.jar;C:\Users\ghebr\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3\junit-jupiter-engine-5.10.3.jar;C:\Users\ghebr\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;C:\Users\ghebr\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\ghebr\.m2\repository\org\json\json\20240303\json-20240303.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\ghebr"/>
     <property name="user.language" value="en"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\ghebr\AppData\Local\Temp\surefire13120852395782144410\surefirebooter-20260525210310228_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\ghebr\AppData\Local\Temp\surefire4093209946444377370\surefirebooter-20260611190027872_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="26+35-2893"/>
@@ -60,18 +60,18 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="70.0"/>
   </properties>
-  <testcase name="testCellPhoneCheckFalse" classname="com.mycompany.chatapppart1.LoginTests" time="0.026"/>
+  <testcase name="testCellPhoneCheckFalse" classname="com.mycompany.chatapppart1.LoginTests" time="0.018"/>
   <testcase name="testPasswordCheckTrue" classname="com.mycompany.chatapppart1.LoginTests" time="0.001"/>
-  <testcase name="testLoginSuccess" classname="com.mycompany.chatapppart1.LoginTests" time="0.002"/>
-  <testcase name="testCellPhoneIncorrectlyFormatted" classname="com.mycompany.chatapppart1.LoginTests" time="0.001"/>
+  <testcase name="testLoginSuccess" classname="com.mycompany.chatapppart1.LoginTests" time="0.001"/>
+  <testcase name="testCellPhoneIncorrectlyFormatted" classname="com.mycompany.chatapppart1.LoginTests" time="0.002"/>
   <testcase name="testLoginFail" classname="com.mycompany.chatapppart1.LoginTests" time="0.001"/>
-  <testcase name="testUsernameIncorrectlyFormatted" classname="com.mycompany.chatapppart1.LoginTests" time="0.001"/>
-  <testcase name="testCellPhoneCorrectlyFormatted" classname="com.mycompany.chatapppart1.LoginTests" time="0.001"/>
+  <testcase name="testUsernameIncorrectlyFormatted" classname="com.mycompany.chatapppart1.LoginTests" time="0.0"/>
+  <testcase name="testCellPhoneCorrectlyFormatted" classname="com.mycompany.chatapppart1.LoginTests" time="0.0"/>
   <testcase name="testPasswordIncorrectlyFormatted" classname="com.mycompany.chatapppart1.LoginTests" time="0.001"/>
-  <testcase name="testPasswordCheckFalse" classname="com.mycompany.chatapppart1.LoginTests" time="0.002"/>
+  <testcase name="testPasswordCheckFalse" classname="com.mycompany.chatapppart1.LoginTests" time="0.0"/>
   <testcase name="testCellPhoneCheckTrue" classname="com.mycompany.chatapppart1.LoginTests" time="0.001"/>
   <testcase name="testPasswordCorrectlyFormatted" classname="com.mycompany.chatapppart1.LoginTests" time="0.001"/>
   <testcase name="testUsernameCheckTrue" classname="com.mycompany.chatapppart1.LoginTests" time="0.001"/>
-  <testcase name="testUsernameCorrectlyFormatted" classname="com.mycompany.chatapppart1.LoginTests" time="0.0"/>
-  <testcase name="testUsernameCheckFalse" classname="com.mycompany.chatapppart1.LoginTests" time="0.0"/>
+  <testcase name="testUsernameCorrectlyFormatted" classname="com.mycompany.chatapppart1.LoginTests" time="0.001"/>
+  <testcase name="testUsernameCheckFalse" classname="com.mycompany.chatapppart1.LoginTests" time="0.001"/>
 </testsuite>
