@@ -1,6 +1,6 @@
-package com.mycompany.chatapppart1;
+package com.mycompany.chatapppart1;  // Package declaration
 
-import java.util.Scanner;
+import java.util.Scanner;  // Import Scanner for user input
 
 /**
  * Entry point for the ChatApp application.
@@ -25,24 +25,24 @@ public class MainApp {
      * @param args command-line arguments (not used)
      */
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        Login login = new Login();
+        Scanner input = new Scanner(System.in);  // Create Scanner object
+        Login login = new Login();  // Create Login instance
 
         // Delegate to helper methods - avoids duplicating registration and login logic
-        String registerMessage = runRegistration(input, login);
+        String registerMessage = runRegistration(input, login);  // Run registration flow
 
         if (registerMessage.equals("User registered successfully.")) {
-            runLogin(input, login);
+            runLogin(input, login);  // Run login flow
 
             // Part 3: load any messages stored in previous sessions BEFORE showing the menu
-            Message.loadStoredMessages();
+            Message.loadStoredMessages();  // Load saved messages from file
 
             // ── Main Menu ─────────────────────────────────────────────────────
             System.out.println("\nWelcome to QuickChat.");
             System.out.print("How many messages do you want to send? ");
-            int numMessages = Integer.parseInt(input.nextLine());
+            int numMessages = Integer.parseInt(input.nextLine());  // Get message count
 
-            boolean running = true;
+            boolean running = true;  // Menu loop flag
             while (running) {
                 System.out.println("\n--- Menu ---");
                 System.out.println("1) Send Messages");
@@ -50,23 +50,23 @@ public class MainApp {
                 System.out.println("3) Quit");
                 System.out.println("4) Stored Messages");
                 System.out.print("Choose an option: ");
-                String choice = input.nextLine();
+                String choice = input.nextLine();  // Get user choice
 
                 switch (choice) {
                     case "1":
-                        sendMessages(input, numMessages);
+                        sendMessages(input, numMessages);  // Send messages
                         break;
                     case "2":
                         System.out.println("\n--- All Sent Messages ---");
-                        System.out.println(Message.printMessages());
-                        System.out.println("Total messages sent: " + Message.returnTotalMessages());
+                        System.out.println(Message.printMessages());  // Display messages
+                        System.out.println("Total messages sent: " + Message.returnTotalMessages());  // Show count
                         break;
                     case "3":
-                        running = false;
+                        running = false;  // Exit loop
                         System.out.println("Goodbye!");
                         break;
                     case "4":
-                        storedMessagesMenu(input);
+                        storedMessagesMenu(input);  // Show stored messages submenu
                         break;
                     default:
                         System.out.println("Invalid option. Please try again.");
@@ -77,7 +77,7 @@ public class MainApp {
             System.out.println("Registration failed. Please restart and try again.");
         }
 
-        input.close();
+        input.close();  // Close scanner
     }
 
     // ── Registration ─────────────────────────────────────────────────────────────
@@ -94,40 +94,40 @@ public class MainApp {
         System.out.println("============ USER REGISTRATION ===============");
 
         System.out.print("Enter your first name: ");
-        String firstName = input.nextLine();
+        String firstName = input.nextLine();  // Get first name
         System.out.print("Enter your last name: ");
-        String lastName = input.nextLine();
+        String lastName = input.nextLine();  // Get last name
 
         // Keep prompting until a valid username is entered
         String username = "", usernameMessage = "";
         while (!usernameMessage.equals("Username successfully captured.")) {
             System.out.print("Enter a username (must contain '_' and be <= 5 characters): ");
-            username = input.nextLine();
-            usernameMessage = login.validateUsername(username);
-            System.out.println(usernameMessage);
+            username = input.nextLine();  // Get username
+            usernameMessage = login.validateUsername(username);  // Validate it
+            System.out.println(usernameMessage);  // Show result
         }
 
         // Keep prompting until a valid password is entered
         String password = "", passwordMessage = "";
         while (!passwordMessage.equals("Password successfully captured.")) {
             System.out.print("Enter a password (8+ chars, 1 capital, 1 number, 1 special char): ");
-            password = input.nextLine();
-            passwordMessage = login.validatePassword(password);
-            System.out.println(passwordMessage);
+            password = input.nextLine();  // Get password
+            passwordMessage = login.validatePassword(password);  // Validate it
+            System.out.println(passwordMessage);  // Show result
         }
 
         // Keep prompting until a valid South African phone number is entered
         String phoneNumber = "", phoneMessage = "";
         while (!phoneMessage.equals("Cell phone number successfully added.")) {
             System.out.print("Enter your South African phone number (+27...): ");
-            phoneNumber = input.nextLine();
-            phoneMessage = login.validatePhoneNumber(phoneNumber);
-            System.out.println(phoneMessage);
+            phoneNumber = input.nextLine();  // Get phone number
+            phoneMessage = login.validatePhoneNumber(phoneNumber);  // Validate it
+            System.out.println(phoneMessage);  // Show result
         }
 
-        String registerMessage = login.registerUser(username, password, phoneNumber, firstName, lastName);
-        System.out.println("\n" + registerMessage);
-        return registerMessage;
+        String registerMessage = login.registerUser(username, password, phoneNumber, firstName, lastName);  // Register user
+        System.out.println("\n" + registerMessage);  // Show registration result
+        return registerMessage;  // Return result
     }
 
     // ── Login ─────────────────────────────────────────────────────────────────────
@@ -141,14 +141,14 @@ public class MainApp {
      */
     public static void runLogin(Scanner input, Login login) {
         System.out.println("\n=== LOGIN ===");
-        boolean loggedIn = false;
+        boolean loggedIn = false;  // Login flag
         while (!loggedIn) {
             System.out.print("Enter username: ");
-            String loginUsername = input.nextLine();
+            String loginUsername = input.nextLine();  // Get username
             System.out.print("Enter password: ");
-            String loginPassword = input.nextLine();
-            loggedIn = login.loginUser(loginUsername, loginPassword);
-            System.out.println(login.returnLoginStatus(loggedIn));
+            String loginPassword = input.nextLine();  // Get password
+            loggedIn = login.loginUser(loginUsername, loginPassword);  // Attempt login
+            System.out.println(login.returnLoginStatus(loggedIn));  // Show result
         }
     }
 
@@ -163,7 +163,7 @@ public class MainApp {
      * @param numMessages the number of messages to process in this batch
      */
     public static void sendMessages(Scanner input, int numMessages) {
-        for (int i = 1; i <= numMessages; i++) {
+        for (int i = 1; i <= numMessages; i++) {  // Loop through each message
             System.out.println("\n--- Message " + i + " of " + numMessages + " ---");
 
             String recipient;
@@ -172,37 +172,37 @@ public class MainApp {
             // Keep prompting until a valid recipient number is entered
             while (true) {
                 System.out.print("Enter recipient cell number (e.g. +27...): ");
-                recipient = input.nextLine();
-                Message temp = new Message(i, recipient, "placeholder");
-                String check = temp.checkRecipientCell();
-                System.out.println(check);
-                if (check.equals("Cell phone number successfully captured.")) break;
+                recipient = input.nextLine();  // Get recipient number
+                Message temp = new Message(i, recipient, "placeholder");  // Create temp message
+                String check = temp.checkRecipientCell();  // Validate recipient
+                System.out.println(check);  // Show result
+                if (check.equals("Cell phone number successfully captured.")) break;  // Exit loop if valid
             }
 
             // Keep prompting until a valid message body is entered
             while (true) {
                 System.out.print("Enter your message (max 250 characters): ");
-                String body = input.nextLine();
-                msg = new Message(i, recipient, body);
-                String validation = msg.validateMessage();
-                System.out.println(validation);
-                if (validation.equals("Message ready to send.")) break;
+                String body = input.nextLine();  // Get message body
+                msg = new Message(i, recipient, body);  // Create message object
+                String validation = msg.validateMessage();  // Validate message
+                System.out.println(validation);  // Show result
+                if (validation.equals("Message ready to send.")) break;  // Exit loop if valid
             }
 
-            System.out.println("Message ID:   " + msg.getMessageID());
-            System.out.println("Message Hash: " + msg.getMessageHash());
+            System.out.println("Message ID:   " + msg.getMessageID());  // Display message ID
+            System.out.println("Message Hash: " + msg.getMessageHash());  // Display message hash
 
             System.out.println("1) Send Message");
             System.out.println("2) Disregard Message");
             System.out.println("3) Store Message");
             System.out.print("Choose: ");
-            int action = Integer.parseInt(input.nextLine());
-            System.out.println(msg.sentMessage(action));
+            int action = Integer.parseInt(input.nextLine());  // Get user action
+            System.out.println(msg.sentMessage(action));  // Process message based on action
         }
 
         System.out.println("\n=== All Sent Messages ===");
-        System.out.println(Message.printMessages());
-        System.out.println("Total messages sent: " + Message.returnTotalMessages());
+        System.out.println(Message.printMessages());  // Display all messages
+        System.out.println("Total messages sent: " + Message.returnTotalMessages());  // Show total count
     }
 
     // ── Stored Messages Sub-Menu ──────────────────────────────────────────────────
@@ -223,7 +223,7 @@ public class MainApp {
      * @param input the active Scanner for reading user input
      */
     public static void storedMessagesMenu(Scanner input) {
-        boolean inSubMenu = true;
+        boolean inSubMenu = true;  // Submenu loop flag
 
         while (inSubMenu) {
             System.out.println("\n--- Stored Messages ---");
@@ -235,38 +235,38 @@ public class MainApp {
             System.out.println("f) Display full report");
             System.out.println("g) Return to main menu");
             System.out.print("Choose an option: ");
-            String subChoice = input.nextLine().trim().toLowerCase();
+            String subChoice = input.nextLine().trim().toLowerCase();  // Get submenu choice
 
             switch (subChoice) {
                 case "a":
                     System.out.println("\n--- All Stored Messages ---");
-                    System.out.println(Message.printMessages());
+                    System.out.println(Message.printMessages());  // Show all messages
                     break;
                 case "b":
                     System.out.println("\n--- Longest Message ---");
-                    System.out.println(Message.displayLongestMessage());
+                    System.out.println(Message.displayLongestMessage());  // Show longest message
                     break;
                 case "c":
                     System.out.print("Enter message ID to search: ");
-                    String searchID = input.nextLine().trim();
-                    System.out.println(Message.searchByMessageID(searchID));
+                    String searchID = input.nextLine().trim();  // Get ID to search
+                    System.out.println(Message.searchByMessageID(searchID));  // Search by ID
                     break;
                 case "d":
                     System.out.print("Enter recipient number to search: ");
-                    String searchRecipient = input.nextLine().trim();
-                    System.out.println(Message.searchByRecipient(searchRecipient));
+                    String searchRecipient = input.nextLine().trim();  // Get recipient to search
+                    System.out.println(Message.searchByRecipient(searchRecipient));  // Search by recipient
                     break;
                 case "e":
                     System.out.print("Enter message hash to delete: ");
-                    String deleteHash = input.nextLine().trim();
-                    System.out.println(Message.deleteByHash(deleteHash));
+                    String deleteHash = input.nextLine().trim();  // Get hash to delete
+                    System.out.println(Message.deleteByHash(deleteHash));  // Delete by hash
                     break;
                 case "f":
                     System.out.println("\n--- Full Message Report ---");
-                    System.out.println(Message.printMessages());
+                    System.out.println(Message.printMessages());  // Display full report
                     break;
                 case "g":
-                    inSubMenu = false;
+                    inSubMenu = false;  // Return to main menu
                     break;
                 default:
                     System.out.println("Invalid option. Please choose a to g.");
